@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968" standalone="no"?>
+<jardesc>
+    <jar path="/home/ariel/workspace/ProjectCouponsA2208.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/ProjectCoupons/readme.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="true" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=ProjectCoupons"/>
+    </selectedElements>
+</jardesc>

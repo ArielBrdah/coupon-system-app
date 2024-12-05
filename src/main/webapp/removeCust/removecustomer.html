@@ -1,0 +1,13 @@
+    <h1><front color="grey"><img src="images/removecustomer.png" height="200" width="200">Remove Customer</front></h1>
+<hr>
+<div>
+             <hr>
+             	<p style="margin-left:2%"> ID 		:	<br /><input type="number" min="1" max="1000" ng-model="customer.id" placeholder="ID"> </p>
+             	<button ng-click="customer.removeCustomer()" style="margin-left:2%">Remove Customer</button>
+             </p>
+	<p ng-show="customer.success" style="color: green; margin-left: 2%">Customer
+			Successfully removed!</p>
+		<p ng-show="customer.failure" style="color: red; margin-left: 2%">Customer
+			was NOT removed (don't exist)!</p>
+             <hr>
+        </div>

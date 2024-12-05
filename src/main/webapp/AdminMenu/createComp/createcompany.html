@@ -1,0 +1,55 @@
+<html ng-app="myApp">
+<head>
+<!-- angular.js -->
+<script src="angular.js"></script>
+
+<!-- bootstrap -->
+<script src="bootstrap.js"></script>
+
+<!-- controller -->
+<script src="main.ctrl.js"></script>
+
+</head>
+<body>
+
+	<div ng-controller="MainCtrl as main1">
+		<table border="1">
+			<tr style="background: lightblue">
+				<th>ID</th>
+				<th>COMPNAME</th>
+				<th>PASSWORD</th>
+				<th>EMAIL</th>
+			</tr>
+			<tr ng-repeat="c in main1.arr">
+				<td>{{c.id}}</td>
+				<td>{{c.compName}}</td>
+				<td>{{c.password}}</td>
+				<td>{{c.email}}</td>
+			</tr>
+		</table>
+		<hr>
+		<p>
+			Add Company:<br>
+		<p>
+			ID : <input type="number" min="1" ng-model="main1.newCompany.id"  placeholder="ID">
+		</p>
+		<p>
+			COMPNAME: <input type="text" ng-model="main1.newCompany.compName"  placeholder="Company Name">
+		</p>
+		<p>
+			PASSWORD: <input type="password" ng-model="main1.newCompany.password"  placeholder="Password">
+		</p>
+		<p>
+			EMAIL : <input type="text" ng-model="main1.newCompany.email"  placeholder="email">
+		</p>
+		<button ng-click="main1.createCompany()">Add Company</button>
+		<br> <br>
+		<p ng-show="main1.success" style="color: green; margin-left: 2%">Company
+			Successfully created!</p>
+		<p ng-show="main1.failure" style="color: red; margin-left: 2%">Company
+			was NOT created!</p>
+		</p>
+		<hr>
+	</div>
+</body>
+</html>

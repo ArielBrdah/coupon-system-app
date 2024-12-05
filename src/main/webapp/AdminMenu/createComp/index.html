@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ 
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+<script src="angular-ui-router.js"></script>
+    <script src="bootstrap.js"></script>
+<script src="mock.srvc.js"></script>
+<script src="route.config.js"></script>
+<script src="create.ctrl.js"></script>
+<script src="get.ctrl.js"></script>
+ 
+<title>Admin Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
+</head>
+<body>
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+ 
+  <a href="http://localhost:8080/projectcoupon/createComp/createcompany.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Create Company</a>
+  <a href="http://localhost:8080/projectcoupon/updateComp/updatecompany.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Update Company</a>
+  <a href="http://localhost:8080/projectcoupon/removeComp/removecompany.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Remove Company</a>
+  <a href="http://localhost:8080/projectcoupon/getComp/getcompany.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Company</a>
+  <a href="http://localhost:8080/projectcoupon/createCust/createcustomer.htm" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get All Companies</a>
+  <a href="http://localhost:8080/projectcoupon/updateCust/updatecustomer.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Create Customer</a>
+  <a href="http://localhost:8080/projectcoupon/updateCust/updatecustomer.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Update Customer</a>
+  <a href="http://localhost:8080/projectcoupon/removeCust/removecustomer.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Remove Customer</a>
+  <a href="http://localhost:8080/projectcoupon/getCust/getcustomer.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Customer</a>
+  <a href="http://localhost:8080/projectcoupon/getAllCust/getallcustomer.html" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get All Customer</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Log Out</a>
+</div>
+ 
+<!-- Page Content -->
+<div style="margin-left:15%">
+ 
+<div class="w3-container w3-blue">
+ 
+  <h1 align="center">Welcome Administrator</h1>
+</div>
+ 
+ 
+<div ui-view></div>
+ 
+</div>
+      
+</body>
+</html>

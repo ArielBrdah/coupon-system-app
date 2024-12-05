@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This web.xml file is not required when using Servlet 3.0 container,
+     see implementation details http://jersey.java.net/nonav/documentation/latest/jax-rs.html -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>Jersey Web Application</servlet-name>
+    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+    <init-param>
+      <param-name>jersey.config.server.provider.packages</param-name>
+      <param-value>com.webapi</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Jersey Web Application</servlet-name>
+    <url-pattern>/webapi/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>log</display-name>
+    <servlet-name>log</servlet-name>
+    <servlet-class>com.controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>log</servlet-name>
+    <url-pattern>/log</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>ClientFilter</display-name>
+    <filter-name>ClientFilter</filter-name>
+    <filter-class>com.myFilter.ClientFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ClientFilter</filter-name>
+    <servlet-name>log</servlet-name>
+    <url-pattern>/ClientFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AccountController</display-name>
+    <servlet-name>AccountController</servlet-name>
+    <servlet-class>com.controller.AccountController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountController</servlet-name>
+    <url-pattern>/AccountController</url-pattern>
+  </servlet-mapping>
+  <error-page>
+  <error-code>404</error-code >
+  <location>/404.html</location>
+  </error-page>
+</web-app>

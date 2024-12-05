@@ -1,0 +1,23 @@
+    <h1><front color="grey"><img src="images/company.png" height="200" width="200">Get Company</front></h1>
+<hr>
+<div>
+            <table border="1" style="margin-left:2%">
+                <tr style="background:greylight">
+                    <th>ID</th>
+                    <th>COMPNAME</th>
+                    <th>PASSWORD</th>
+                    <th>EMAIL</th>
+                </tr>
+                <tr ng-repeat="c in company.arr">
+                    <td>{{c.id}}</td>
+                    <td>{{c.compName}}</td>
+                    <td>{{c.password}}</td>
+                    <td>{{c.email}}</td>
+                </tr>
+             </table>   
+             <hr>
+             	<p style="margin-left:2%"> ID 		:	<br /><input type="text" ng-model="company.id"  placeholder="ID"/> 
+             	<br /> <br /><button ng-click="company.getCompany()">Get Company</button>
+             </p>
+             <hr>
+        </div>

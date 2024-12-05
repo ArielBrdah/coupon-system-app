@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+<script src="angular-ui-router.js"></script>
+<script src="bootstrap.js"></script>
+<script src="route.config.js"></script>
+<script src="createCoup/createCoup.ctrl.js"></script>
+<script src="getAllCoup/getAllCoupons.ctrl.js"></script>
+<script src="getAllCoupByType/getAllCouponsByType.ctrl.js"></script>
+<script src="getCoup/getCoupon.ctrl.js"></script>
+<script src="removeCoup/removeCoupon.ctrl.js"></script>
+<script src="updateCoup/updateCoupon.ctrl.js"></script>
+<title>Company Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body style="background-color:#000000">
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="#/createcoupon" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Create Coupon</a>
+  <a href="#/removecoupon" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Remove Coupon</a>
+  <a href="#/updatecoupon" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Update Coupon</a>
+  <a href="#/getcoupon" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Coupon</a>
+  <a href="#/getallcoupons" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get All Coupons</a>
+  <a href="#/getallcouponsbytype" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Coupon By Type</a>
+  <a href="log?action=logout" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Log Out</a>
+</div>
+ 
+<!-- Page Content -->
+<div style="margin-left:15%; color: #ffffff">
+ 
+<div class="w3-container w3-blue">
+ 
+  <h1>Welcome Company</h1>
+</div>
+ 
+<div ui-view>
+</div>
+ </div>
+      
+</body>
+</html>

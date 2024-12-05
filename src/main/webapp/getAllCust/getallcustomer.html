@@ -1,0 +1,17 @@
+    <h1><front color="grey"><img src="images/customer.png" height="200" width="200">Get All Customer </front></h1>
+<hr>
+<div>
+            <table border="1" style="margin-left:2%">
+                <tr style="background:greylight">
+                    <th>ID</th>
+                    <th>CUSTNAME</th>
+                    <th>PASSWORD</th>
+                </tr>
+                <tr ng-repeat="c in customer.arr">
+                    <td>{{c.id}}</td>
+                    <td>{{c.custName}}</td>
+                    <td>{{c.password}}</td>
+                </tr>
+             </table>   
+             <hr>
+</div>

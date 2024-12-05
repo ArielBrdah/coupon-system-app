@@ -1,0 +1,24 @@
+
+<h1><front color="grey"><img src="images/add.png" height="200" width="200">Add Company </front></h1>
+		<hr>
+		<p style="margin-left:2%">
+			<br>
+			ID : <br><input type="number" min="1" ng-model="company.newCompany.id"  placeholder="ID">
+		</p>
+		<p style="margin-left:2%">
+			COMPNAME: <br><input type="text" ng-model="company.newCompany.compName"  placeholder="Company Name">
+		</p>
+		<p style="margin-left:2%">
+			PASSWORD: <br><input type="password" ng-model="company.newCompany.password"  placeholder="Password">
+		</p>
+		<p style="margin-left:2%">
+			EMAIL : <br><input type="email" ng-model="company.newCompany.email"  placeholder="email">
+		</p>
+		<button ng-click="company.createCompany()" style="margin-left:2%">Add Company</button>
+		<br>
+		<p ng-show="company.success" style="color: green; margin-left: 2%">Company
+			Successfully created!</p>
+		<p ng-show="company.failure" style="color: red; margin-left: 2%">Company
+			was NOT created!</p>
+		</p>
+		<hr>

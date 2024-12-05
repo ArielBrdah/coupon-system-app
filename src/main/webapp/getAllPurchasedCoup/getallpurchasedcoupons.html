@@ -1,0 +1,28 @@
+    <h1><front color="grey"><img src="images/coupon.png" height="200" width="200">Get All Purchased Coupons </front></h1>
+<hr>
+<table border="1" style="margin-left:2%">
+                <tr style="background:lightblue">
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>START-DATE</th>
+                    <th>END-DATE</th>
+                    <th>AMOUNT</th>
+                    <th>TYPE</th>
+                    <th>MESSAGE</th>
+                    <th>PRICE</th>
+                    <th>IMAGE</th>
+                </tr>
+                <tr ng-repeat="c in coupon.arr">
+                    <td>{{c.id}}</td>
+                    <td>{{c.title}}</td>
+                    <td>{{c.startDate}}</td>
+                	<td>{{c.endDate}}</td>
+                    <td>{{c.amount}}</td>
+                    <td>{{c.type}}</td>
+                	<td>{{c.message}}</td>
+                    <td>{{c.price}}</td>
+                    <td>{{c.image}}</td>
+                </tr>
+             </table>   
+             <hr>
+             <hr>

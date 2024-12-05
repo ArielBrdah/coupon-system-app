@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+<script src="angular-ui-router.js"></script>
+<script src="bootstrap.js"></script>
+<script src="route.config.js"></script>
+<style>
+#userico{
+    background-image:url('images/username.png');
+    background-repeat:no-repeat;
+    background-size:25px 25px;
+}
+#keyico{
+    background-image:url('images/key.png');
+    background-repeat:no-repeat;
+    background-size:25px 25px;
+}/*
+input[type=text] {
+  background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    text-align: left;
+    text-indent: 20px;
+}*/
+</style>
+<title>Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body style="background-color:#000000">
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-grey w3-bar-block" style="width:15%">
+</div>
+ 
+<!-- Page Content -->
+<div style="margin-left:15%; color: #ffffff">
+<div class="w3-container w3-blue">
+ 
+  <h1>Welcome</h1>
+</div> 
+<div ui-view style="margin-left:2%">
+<form action="http://localhost:8080/projectcoupon/log" method="post">
+<br>
+<br>
+user:<br>
+<input id="userico" style="text-indent:30px;" type="text" name="name" placeholder="username" />
+<br>
+<br>
+password:<br>
+<input id="keyico" style="text-indent:30px;" type="password" name="password" placeholder="password" />
+<br>
+<br>
+Client:<br>
+<select name="client">
+	<option value="AdminFacade">Admin</option>
+	<option value="CompanyFacade">Company</option>
+	<option value="CustomerFacade">Customer</option>
+	</select>
+<br><br>
+<input type="submit" value="Connect" />
+</form>
+</div>
+ </div>
+      
+</body>
+</html>

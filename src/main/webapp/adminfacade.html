@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<script src="angular.js"></script>
+<script src="angular-ui-router.js"></script>
+<script src="bootstrap.js"></script>
+<script src="route.config.js"></script>
+<script src="createComp/createComp.ctrl.js"></script>
+<!-- script src="createCoup/createCoup.ctrl.js"></script -->
+<script src="createCust/createCust.ctrl.js"></script>
+<script src="getAllComp/getAllCompanies.ctrl.js"></script>
+<!--  script src="getAllCoup/getAllCoup.ctrl.js"></script -->
+<!-- script src="getAllCoupByType/getAllCoupByType.ctrl.js"></script -->
+<script src="getAllCust/getAllCustomer.ctrl.js"></script>
+<!--  script src="getAllPurchasedCoup/getAllPurchasedCoupons.ctrl.js"></script -->
+<!-- script src="getAllPurchasedCoupByPrice/getAllPurchasedCouponsByPrice.ctrl.js"></script>
+<script src="getAllPurchasedCoupByType/getAllPurchasedCouponsByType.ctrl.js"></script -->
+<script src="getComp/getCompany.ctrl.js"></script>
+<!-- script src="getCoup/getCoupon.ctrl.js"></script-->
+<script src="getCust/getCustomer.ctrl.js"></script>
+<!-- script src="purchaseCoup/purchaseCoupon.ctrl.js"></script -->
+<script src="removeComp/removeCompany.ctrl.js"></script>
+<!-- script src="removeCoup/removeCoupon.ctrl.js"></script -->
+<script src="removeCust/removeCustomer.ctrl.js"></script>
+<script src="updateComp/updateCompany.ctrl.js"></script>
+<!-- script src="updateCoup/updateCoupon.ctrl.js"></script -->
+<script src="updateCust/updateCustomer.ctrl.js"></script>
+<title>Admin Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body style="background-color:#000000">
+ 
+<!-- Sidebar -->
+<div class="w3-sidebar w3-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="#/createcompany" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Create Company</a>
+  <a href="#/removecompany" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Remove Company</a>
+  <a href="#/updatecompany" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Update Company</a>
+  <a href="#/getcompany" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Company</a>
+  <a href="#/getallcompanies" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get All Company</a>
+  <a href="#/createcustomer" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Create Customer</a>
+  <a href="#/removecustomer" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Remove Customer</a>
+  <a href="#/updatecustomer" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Update Customer</a>
+  <a href="#/getcustomer" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get Customer</a>
+  <a href="#/getallcustomer" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Get All Customer</a>
+  <a href="log?action=logout" class="w3-bar-item w3-button w3-hover-opacity w3-hover-yellow">Log Out</a>
+</div>
+ 
+<!-- Page Content -->
+<div style="margin-left:15%; color: #ffffff">
+ 
+<div class="w3-container w3-blue">
+ 
+  <h1>Welcome Administrator</h1>
+</div>
+ 
+<div ui-view>
+</div>
+ </div>
+      
+</body>
+</html>

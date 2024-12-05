@@ -1,0 +1,21 @@
+    <h1><front color="grey"><img src="images/customer.png" height="200" width="200">Get Customer</front></h1>
+<hr>
+<div>
+            <table border="1" style="margin-left:2%">
+                <tr style="background:greylight">
+                    <th>ID</th>
+                    <th>CUSTNAME</th>
+                    <th>PASSWORD</th>
+                </tr>
+                <tr ng-repeat="c in customer.arr">
+                    <td>{{c.id}}</td>
+                    <td>{{c.custName}}</td>
+                    <td>{{c.password}}</td>
+                </tr>
+             </table>   
+             <hr>
+             	<p style="margin-left:2%"> ID 		:	<br /><input type="text" ng-model="customer.id" /> 
+             	<br /><br /><button ng-click="customer.getCustomer()">Get Customer</button>
+             </p>
+             <hr>
+        </div>

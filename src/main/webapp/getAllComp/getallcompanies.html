@@ -1,0 +1,18 @@
+<h1><front color="grey"><img src="images/company.png" height="200" width="200">Get All Companies </front></h1>
+                         <hr>
+                         <table border="1" style="margin-left:2%">
+                <tr style="background:grey">
+                    <th>ID</th>
+                    <th>COMPNAME</th>
+                    <th>PASSWORD</th>
+                    <th>EMAIL</th>
+                </tr>
+                <tr ng-repeat="c in company.arr">
+                    <td>{{c.id}}</td>
+                    <td>{{c.compName}}</td>
+                    <td>{{c.password}}</td>
+                    <td>{{c.email}}</td>
+                </tr>
+             </table>   
+             <hr>
+        </div>

@@ -1,0 +1,10 @@
+    <h1><front color="grey"><img src="images/removecoupon.png" height="200" width="200">Remove Coupon</front></h1>
+<hr>
+             	<p style="margin-left:2%"> ID					:	<br /><input type="number"  ng-model="coupon.id" placeholder="ID"> </p>
+             	<button ng-click="coupon.removeCoupon()" style="margin-left:2%">Remove Coupon</button>
+             </p>
+                          		<p ng-show="coupon.success" style="color: green; margin-left: 2%">Coupon
+			Successfully removed!</p>
+		<p ng-show="coupon.failure" style="color: red; margin-left: 2%">Coupon
+			was NOT removed (don't exist)!</p>
+             <hr>

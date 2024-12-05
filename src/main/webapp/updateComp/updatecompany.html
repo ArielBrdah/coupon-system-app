@@ -1,0 +1,15 @@
+    <h1><front color="grey"><img src="images/updatecompany.png" height="200" width="200">Update Company</front></h1>
+<hr>
+<div>
+             	<p style="margin-left:2%"> ID 		:	<br /><input type="number" min="1" max="1000" ng-model="company.newCompany.id" placeholder="ID"> </p>
+             	<p style="margin-left:2%"> COMPNAME: <br /><input type="text" ng-model="company.newCompany.compName" placeholder="Company Name"> </p>
+             	<p style="margin-left:2%"> PASSWORD: 	<br /><input type="password" ng-model="company.newCompany.password" placeholder="Password"> </p>
+             	<p style="margin-left:2%"> EMAIL 	: 	<br /><input type="email" ng-model="company.newCompany.email" placeholder="Email"> </p>
+             	<button ng-click="company.updateCompany()" style="margin-left:2%">Update Company</button>
+             </p>
+          <p ng-show="company.success" style="color: green; margin-left: 2%">Company
+			Successfully updated!</p>
+		<p ng-show="company.failure" style="color: red; margin-left: 2%">Company
+			was NOT updated (company not exist)!</p>
+             <hr>
+  </div>

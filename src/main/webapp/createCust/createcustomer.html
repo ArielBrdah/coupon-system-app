@@ -1,0 +1,13 @@
+<h1><front color="grey"><img src="images/addcust.png" height="200" width="200">Add Customer </front></h1>
+             <hr>
+             	<p style="margin-left:2%"> ID 		:	<br /><input type="number" min="1" max="1000" ng-model="customer.newCustomer.id" placeholder="ID"> </p>
+             	<p style="margin-left:2%"> CUSTNAME: 	<br /><input type="text" ng-model="customer.newCustomer.custName" placeholder="Customer Name"> </p>
+             	<p style="margin-left:2%"> PASSWORD: 	<br /><input type="password" ng-model="customer.newCustomer.password" placeholder="Password"> </p>
+             	<button ng-click="customer.createCustomer()" style="margin-left:2%">Add Customer</button>
+             </p>
+         <p ng-show="customer.success" style="color: green; margin-left: 2%">Customer
+			Successfully created!</p>
+		<p ng-show="customer.failure" style="color: red; margin-left: 2%">Customer
+			was NOT created!</p>
+		</p>
+             <hr>
