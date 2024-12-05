@@ -96,11 +96,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact 📢
 
 Have questions or feedback? Feel free to reach out:
-- Email: support@couponsystem.com
-- Twitter: [@CouponSystem](https://twitter.com/CouponSystem)
-
----
-
-## Suggested Header Image 🌟
-
-Consider using an engaging and vibrant header image to showcase deals and coupons. For example, you can use a free image from [Unsplash](https://unsplash.com/) or [Pexels](https://www.pexels.com/). Suggested keywords for search: `coupons`, `discount`, `shopping deals`.
+- Email: acberdah@gmail.com
